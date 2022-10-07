@@ -1,0 +1,11 @@
+#include<iostream>
+using namespace std;
+int main(){
+   int a = 132;
+   int b = 132;
+   if ( (a ^ b) )
+      cout<<"a is not equal to b";
+   else
+      cout<<"a is else to b";
+      return 0;
+}
