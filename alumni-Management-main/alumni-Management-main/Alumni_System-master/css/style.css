@@ -1,0 +1,198 @@
+.on {
+  background-color: rgb(219, 80, 80) !important;
+  color: white;
+}
+.blank:hover {
+  background-color: rgb(66, 66, 66) !important;
+  color: white;
+}
+
+.button {
+  border: 2px solid rgb(219, 80, 80);
+  padding: 0.4rem 2rem;
+  font-size: 14px;
+  /* transition: 0.5s; */
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+.button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 5%;
+  width: 95%;
+  height: 100%;
+  background: rgb(219, 80, 80);
+  z-index: -1;
+  transform: skewX(50deg) scaleX(0);
+  transition: 0.2s;
+}
+.button:hover::before {
+  transform: skewX(50deg) scaleX(1);
+}
+.button:hover {
+  color: white !important;
+}
+
+/* **************************************** Hero Page Styling Start **************************************** */
+.hero__page {
+  background: linear-gradient(rgba(16, 29, 44, 0.5), rgba(16, 29, 44, 0.5)),
+    url("../Images/home-bg.jpg") center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 80vh;
+  z-index: -1;
+}
+
+/* Header Styling Start */
+.header {
+  background-color: gainsboro;
+  position: relative;
+  top: 10px;
+}
+.header .title .btn {
+  background-color: rgb(66, 66, 66) !important;
+  border-radius: 0;
+}
+.header .title .form-control {
+  border-radius: 0 !important;
+}
+
+.navigation_Bar {
+  background-color: black;
+}
+.navbar .nav-item {
+  margin-right: 1px;
+}
+.navbar .nav-item .nav-link {
+  background-color: rgb(66, 66, 66);
+  color: white;
+  padding: 12px 26.72px;
+}
+.navbar .nav-item .nav-link:hover {
+  background-color: rgb(219, 80, 80);
+  color: white;
+  transition: all 0.6s;
+}
+
+.carousel-inner {
+  width: 60%;
+  height: 50vh;
+}
+
+.home_second__page {
+  background-color: rgb(216, 215, 215);
+  width: 100%;
+  height: 1300px;
+}
+
+/* Swiper Slider */
+.swiper-slide {
+  text-align: center;
+  background: #fff;
+  width: 250px !important;
+  display: flex;
+  flex-direction: column;
+}
+.swiper-slide p {
+  font-size: 13px;
+  padding: 0 1rem;
+}
+.swiper-slide h4 {
+  padding-top: 1.5rem;
+  text-transform: uppercase;
+}
+.swiper-slide h4 a {
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+}
+.swiper-slide:hover {
+  cursor: pointer;
+}
+.swiper-slide:hover h4 a {
+  color: rgb(219, 80, 80);
+  transition: all 0.3s ease-in-out;
+}
+/* **************************************** Hero Page Styling End **************************************** */
+
+/* **************************************** About Page Styling Start **************************************** */
+.comman__header .blank {
+  padding: 23px 135.5px !important;
+}
+.comman__header .header {
+  background: linear-gradient(rgba(16, 29, 44, 0.5), rgba(16, 29, 44, 0.5)),
+    url("../Images/about-header-bg.jpg") center no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.technologies_details_page {
+  background-color: rgb(216, 215, 215);
+  width: 100%;
+  height: 950px;
+}
+
+.pagination .page-item .page-link {
+  background-color: rgb(66, 66, 66) !important;
+  color: white;
+  border-color: black;
+}
+/* **************************************** About Page Styling End **************************************** */
+
+/* **************************************** Famous Alumni Details Styling Start **************************************** */
+.famous-alumni_details_page {
+  background-color: rgb(216, 215, 215);
+  width: 100%;
+  height: 1050px;
+}
+.famous-alumni_details_page h3 a:hover,
+.famous-alumni_details_page .date_comment_view a:hover,
+.famous-alumni_details_page h3 a:hover {
+  color: rgb(219, 80, 80) !important;
+  text-decoration: none;
+  cursor: pointer;
+}
+.adds a div {
+  background-color: rgb(247, 243, 243);
+  width: 155px;
+  height: 155px;
+}
+.adds a div:hover {
+  background-color: rgb(231, 228, 228);
+  transition: all 0.5s;
+}
+.tags_container button {
+  background-color: rgb(53, 52, 52);
+  color: white;
+  border: none;
+  border-radius: 2px;
+  padding: 4px 12px;
+}
+.tags_container button:hover {
+  background-color: rgb(219, 80, 80);
+  transition: all 0.5s;
+}
+/* **************************************** Famous Alumni Details Styling End **************************************** */
+
+/* **************************************** Contact Page Styling Start **************************************** */
+.contact__page_details {
+  background-color: rgb(216, 215, 215);
+  width: 100%;
+  height: 1100px;
+}
+.contact__page_details a {
+  text-decoration: none;
+}
+.contact__page_details .map_container {
+  width: 100%;
+  height: 400px;
+}
+/* **************************************** Contact Page Styling End **************************************** */
+
+.about_details_page {
+  background-color: rgb(216, 215, 215);
+  width: 100%;
+  height: 850px;
+}
